@@ -24,7 +24,7 @@
 <br>
 <div id="wrapshopcart">
     <center>
-        <h3><a href="https://imkay.herokuapp.com">IMKAY</a></h3>
+        <h3><a href="#">IMKAY</a></h3>
     </center>
     <hr/>
     <div class="form-group">
@@ -32,15 +32,15 @@
             <label class="form-control">randomanime un-official API
                 <span class="badge">new</span>
             </label>
-                <p>Simple API to get anime recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
+                <p>Simple API to get <a href="/api/anime.php">anime</a> recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
             <textarea class="form-control" rows="3" readonly>GET /api/anime.php
 
 host: imkay.herokuapp.com</textarea>
         </div>
     </div>
-<center>
-    <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a> & <a href="https://github.com/zevtyardt/imkay">github</a></p>
-<center>
-    </div>
+    <center>
+        <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a></p>
+    <center>
+</div>
 </body>
 </html>
