@@ -1,6 +1,6 @@
 <?php
 
-function valuenime($url, $code, $token){
+function valuenime($url, $code){
     $result = array();
 
     $url = $url."/shows/".$code."/";
@@ -98,4 +98,4 @@ function valnime(){
 }
 
 $next_page = valnime();
-valuenime($next_page[0], $next_page[1], $token);
+valuenime($next_page[0], $next_page[1]);
