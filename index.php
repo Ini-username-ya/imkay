@@ -24,7 +24,7 @@
 <br>
 <div id="wrapshopcart">
     <center>
-        <h3><a href="https://github.com/zevtyardt/imkay">IMKAY</a></h3>
+        <h3><a href="https://imkay.herokuapp.com">IMKAY</a></h3>
     </center>
     <hr/>
     <div class="form-group">
@@ -39,7 +39,7 @@ host: imkay.herokuapp.com</textarea>
         </div>
     </div>
 <center>
-    <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a></p>
+    <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a> & <a href="https://github.com/zevtyardt/imkay">github</a></p>
 <center>
     </div>
 </body>
