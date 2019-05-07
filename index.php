@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -27,7 +28,7 @@
 <br>
 <div id="wrapshopcart">
     <center>
-        <h3><a href="#">IMKAY</a> API documentation</h3>
+        <h4><a href="#">IMKAY</a> API documentation</h4>
     </center>
     <hr/>
     <div class="form-group">
@@ -45,6 +46,7 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/a
 Referer: https://imkay.herokuapp.com/
 </textarea>
         </div>
+            <hr/>
     </div>
     <center>
         <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a></p>
@@ -52,3 +54,4 @@ Referer: https://imkay.herokuapp.com/
 </div>
 </body>
 </html>
+
