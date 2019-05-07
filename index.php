@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Val">
 <title>Imkay</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <style type="text/css">
@@ -18,19 +19,21 @@
     #count{
         text-align: right;
     }
+    .badge-dark{color: #fff;background-color: #343a40;border-radius: 3px;padding: 1px}
+
 </style>
 </head>
 <body>
 <br>
 <div id="wrapshopcart">
     <center>
-        <h3><a href="#">IMKAY</a></h3>
+        <h3><a href="#">IMKAY</a> documentation</h3>
     </center>
     <hr/>
     <div class="form-group">
         <div class="form-group purple-border">
             <label class="form-control">randomanime un-official API
-                <span class="badge">new</span>
+                <i><span class="badge-dark"> new </span></i>
             </label>
                 <p>Simple API to get <a href="/api/anime.php">anime</a> recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
             <textarea class="form-control" rows="7" readonly>GET /api/anime.php HTTP/1.1
