@@ -27,7 +27,7 @@
 <br>
 <div id="wrapshopcart">
     <center>
-        <h3><a href="#">IMKAY</a> documentation</h3>
+        <h3><a href="#">IMKAY</a> API documentation</h3>
     </center>
     <hr/>
     <div class="form-group">
