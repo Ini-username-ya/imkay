@@ -1,43 +1,46 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>imkay - public API</title>
-    <style>
-        body{margin: 0;padding: 0;background: #2980b9;}
-        .loading{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);height: 40px;display: flex;align-items: center;}
-        .obj{width: 6px;height: 40px;background: white;margin: 0 3px;border-radius: 10px;animation: loading 0.8s infinite;}
-        .obj:nth-child(2){animation-delay: 0.1s;}
-        .obj:nth-child(3){animation-delay: 0.2s;}
-        .obj:nth-child(4){animation-delay: 0.3s;}
-        .obj:nth-child(5){animation-delay: 0.4s;}
-        .obj:nth-child(6){animation-delay: 0.5s;}
-        .obj:nth-child(7){animation-delay: 0.6s;}
-        .obj:nth-child(8){animation-delay: 0.7s;}
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imkay</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style type="text/css">
+    #wrapshopcart{width:350px;margin:auto;padding:20px;
+     padding-bottom: 1px;margin-bottom: 20px;background:#fff;box-shadow:0 0 5px #c1c1c1;border-radius:5px;}
+    #response{
+        text-align: center;
+    }
+    #EE{
+        width: 50%;
+    }
+    textarea { resize:none; }
+    #count{
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+<br>
+<div id="wrapshopcart">
+    <center>
+        <h3><a href="https://github.com/zevtyardt/imkay">IMKAY</a></h3>
+    </center>
+    <hr/>
+    <div class="form-group">
+        <div class="form-group purple-border">
+            <label class="form-control">randomanime un-official API
+                <span class="badge">new</span>
+            </label>
+                <p>Simple API to get anime recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
+            <textarea class="form-control" rows="3" readonly>GET /api/anime.php
 
-        @keyframes loading {
-            0%{
-                height: 0;
-            }
-            50%{
-                height: 40px;
-            }
-            100%{
-                height: 0;
-            }
-        }
-    </style>
-  </head>
-  <body>
-    <div class="loading">
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
-      <div class="obj"></div>
+host: imkay.herokuapp.com</textarea>
+        </div>
     </div>
-  </body>
+<center>
+    <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a></p>
+<center>
+    </div>
+</body>
 </html>
