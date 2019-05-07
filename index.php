@@ -12,7 +12,7 @@
         text-align: center;
     }
     #EE{
-        width: 50%;
+        width: 100%;
     }
     textarea { resize:none; }
     #count{
@@ -33,9 +33,14 @@
                 <span class="badge">new</span>
             </label>
                 <p>Simple API to get <a href="/api/anime.php">anime</a> recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
-            <textarea class="form-control" rows="3" readonly>GET /api/anime.php
+            <textarea class="form-control" rows="7" readonly>GET /api/anime.php HTTP/1.1
 
-host: imkay.herokuapp.com</textarea>
+Host: imkay.herokuapp.com
+Connection: keep-alive
+Save-Data: on
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://imkay.herokuapp.com/
+</textarea>
         </div>
     </div>
     <center>
