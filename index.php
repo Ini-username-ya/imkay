@@ -1,57 +1,75 @@
-
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Val">
-<title>Imkay</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<style type="text/css">
-    #wrapshopcart{width:350px;margin:auto;padding:20px;
-     padding-bottom: 1px;margin-bottom: 20px;background:#fff;box-shadow:0 0 5px #c1c1c1;border-radius:5px;}
-    #response{
-        text-align: center;
-    }
-    #EE{
-        width: 100%;
-    }
-    textarea { resize:none; }
-    #count{
-        text-align: right;
-    }
-    .badge-dark{color: #fff;background-color: #343a40;border-radius: 3px;padding: 1px}
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Val" name="author">
+    <title>
+      Imkay - public api
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <br>
+    <div id="wrapshopcart">
+      <div class="sidenav" id="mySidenav">
+        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">
+          &times;
+        </a>
+        <a href="/api">
+          API
+        </a>
+      </div>
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()" style="">
+        <i class="fa fa-bars">
+        </i>
+      </span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+      <center>
+        <h4>
+          <br>
+          selamat datang di 
+          <a href="#">
+            IMKAY
+          </a>
+        </h4>
+      </center>
 
-</style>
-</head>
-<body>
-<br>
-<div id="wrapshopcart">
-    <center>
-        <h4><a href="#">IMKAY</a> API documentation</h4>
-    </center>
-    <hr/>
-    <div class="form-group">
-        <div class="form-group purple-border">
-            <label class="form-control">randomanime un-official API
-                <i><span class="badge-dark"> new </span></i>
-            </label>
-                <p>Simple API to get <a href="/api/anime.php">anime</a> recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p>
-            <textarea class="form-control" rows="7" readonly>GET /api/anime.php HTTP/1.1
 
-Host: imkay.herokuapp.com
-Connection: keep-alive
-Save-Data: on
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
-Referer: https://imkay.herokuapp.com/
-</textarea>
-        </div>
-            <hr/>
+
+
+
+
+      <hr>
+
+
+
+
+
+
+      <center>
+        <p>
+          &copy; 2019&nbsp;
+          <a href="https://m.facebook.com/zvtyrdt.id">
+            IMKAY&nbsp;
+          </a>
+          <i class="fa fa-facebook-official">
+          </i>
+          <a href="https://m.facebook.com/zvtyrdt.id">
+             zvtyrdt.id
+          </a>
+        </p>
+      </center>
     </div>
-    <center>
-        <p> &copy; 2019 <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a></p>
-    <center>
-</div>
-</body>
+  </body>
 </html>
-
