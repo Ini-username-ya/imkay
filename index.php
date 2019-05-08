@@ -34,7 +34,7 @@
       </script>
 
       <center>
-        <h4><br>Selamat datang di <a href="#">IMKAY</a></h4>
+        <h4><br>Selamat datang</h4>
       </center>
       <hr>
       <center>

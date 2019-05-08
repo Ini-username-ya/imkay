@@ -1,4 +1,18 @@
 <?php
+header('Content-Type: application/json');
+
+session_start();
+if (isset($_SESSION['LAST_CALL'])) {
+    $last = strtotime($_SESSION['LAST_CALL']);
+    $curr = strtotime(date("Y-m-d h:i:s"));
+    $sec =  abs($last - $curr);
+    if ($sec <= 4){
+        $data = array("error" => true, "msg_error" => "Too Many Requests");
+        header('Content-Type: application/json');
+        die (json_encode($data));
+    }
+  }
+$_SESSION['LAST_CALL'] = date("Y-m-d h:i:s");
 
 function valuenime($url, $code){
     $result = array();
@@ -22,7 +36,7 @@ function valuenime($url, $code){
 
     $html = curl_exec($ch);
     if (curl_errno($ch)) {
-       echo '{"status":false,"data":[],"msg_error":"'.curl_error($ch).'"}';
+       echo '{"status":false,"msg_error":"'.curl_error($ch).'"}';
     }else{
 
        // base_url
@@ -99,3 +113,5 @@ function valnime(){
 
 $next_page = valnime();
 valuenime($next_page[0], $next_page[1]);
+
+?>

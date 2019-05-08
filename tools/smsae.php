@@ -1,4 +1,24 @@
 <?php
+session_start();
+$limit = 10;
+
+if (isset($_SESSION['LAST_CALL'])) {
+    $last = strtotime($_SESSION['LAST_CALL']);
+    $curr = strtotime(date("Y-m-d h:i:s"));
+    $sec =  abs($last - $curr);
+    if ($sec >= 120){
+        $_SESSION = array();
+  }
+}
+if (!isset($_SESSION['limit'])) {
+    $_SESSION['limit'] = 0;
+}
+
+$_SESSION['limit'] = $_SESSION["limit"] + 1;
+
+if ($_SESSION["limit"] >= $limit){
+  $_SESSION['LAST_CALL'] = date("Y-m-d h:i:s");
+}
 
 $headers = array(
   "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,q=0.8",
@@ -110,13 +130,17 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 </head>
 <body>
 <br>
-  <?php
-     if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
-       $captcha = getCaptcha();
-       $response = sendMessage($_POST["nomor"], $_POST["pesan"], $captcha[0], $captcha[1], $captcha[2]);
-     }
-  ?>
-
+<?php
+/*if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
+  if ($_SESSION["limit"] <= $limit){
+    $captcha = getCaptcha();
+    $response = sendMessage($_POST["nomor"], $_POST["pesan"], $captcha[0], $captcha[1], $captcha[2]);
+  }else{
+    $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_execution" => $_SESSION["LAST_CALL"]);
+    $response = json_encode($dst);
+  }
+}*/
+?>
 <div id="wrapshopcart">
   <a href="/tools">
     <i class="fa fa-times" style="font-size:25px"></i>
@@ -145,4 +169,3 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 </div>
 </body>
 </html>
-
