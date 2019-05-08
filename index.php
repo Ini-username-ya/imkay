@@ -38,7 +38,7 @@
       <center>
         <h4>
           <br>
-          Wellcome To
+          Selamat datang di
           <a href="#">
             IMKAY
           </a>
