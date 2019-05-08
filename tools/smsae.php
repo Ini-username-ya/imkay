@@ -8,7 +8,7 @@ if (isset($_SESSION['LAST_CALL'])) {
     $sec =  abs($last - $curr);
     if ($sec >= 120){
         $_SESSION = array();
-  }
+    }
 }
 if (!isset($_SESSION['limit'])) {
     $_SESSION['limit'] = 0;
@@ -16,7 +16,7 @@ if (!isset($_SESSION['limit'])) {
 
 $_SESSION['limit'] = $_SESSION["limit"] + 1;
 
-if ($_SESSION["limit"] >= $limit){
+if ($_SESSION["limit"] >= $limit and !isset($_SESSION["LAST_CALL"])){
   $_SESSION['LAST_CALL'] = date("Y-m-d h:i:s");
 }
 
@@ -92,11 +92,14 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
     );
     if (strpos($html, "Telah Dikirim")){
       $response["response"]["error"] = false;
-      $response["response"]["message"] = "SMS Gratis Telah Dikirim @zvtyrdt.id";
+      $response["response"]["message"] = "SMS Gratis Telah Dikirim";
     }else{
       $response["response"]["error"] = true;
-      $response["response"]["message"] = "SMS Gratis Gagal Dikirim @zvtyrdt.id";
+      $response["response"]["message"] = "SMS Gratis Gagal Dikirim";
     }
+    $response["sig"] = "@zvtyrdt.id";
+
+
     return json_encode($response);
   }
 }
@@ -131,15 +134,15 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 <body>
 <br>
 <?php
-/*if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
+if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
   if ($_SESSION["limit"] <= $limit){
     $captcha = getCaptcha();
     $response = sendMessage($_POST["nomor"], $_POST["pesan"], $captcha[0], $captcha[1], $captcha[2]);
   }else{
-    $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_execution" => $_SESSION["LAST_CALL"]);
+    $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_call" => $_SESSION["LAST_CALL"]);
     $response = json_encode($dst);
   }
-}*/
+}
 ?>
 <div id="wrapshopcart">
   <a href="/tools">
