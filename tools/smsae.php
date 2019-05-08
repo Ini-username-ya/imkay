@@ -71,11 +71,11 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
       )
     );
     if (strpos($html, "Telah Dikirim")){
-      $response["result"]["error"] = false;
-      $response["result"]["message"] = "SMS Gratis Telah Dikirim @zvtyrdt.id";
+      $response["response"]["error"] = false;
+      $response["response"]["message"] = "SMS Gratis Telah Dikirim @zvtyrdt.id";
     }else{
-      $response["result"]["error"] = true;
-      $response["result"]["message"] = "SMS Gratis Gagal Dikirim @zvtyrdt.id";
+      $response["response"]["error"] = true;
+      $response["response"]["message"] = "SMS Gratis Gagal Dikirim @zvtyrdt.id";
     }
     return json_encode($response);
   }
@@ -119,8 +119,7 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 
 <div id="wrapshopcart">
   <a href="/tools">
-    <i class="fa fa-times" style="font-size:25px">
-    </i>
+    <i class="fa fa-times" style="font-size:25px"></i>
   </a>
   <center>
     <br><h4>IMKAY - free sms sender</h4>
@@ -131,26 +130,15 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
       <label>nomor telepon</label>
       <input class="form-control" type="text" name="nomor" value="<?php echo isset($_POST['nomor']) ? $_POST['nomor'] : ''; ?>" placeholder="Contoh: 628xxxx" required><br>
       <label>pesan</label>
-      <textarea class="form-control sm-up" name="pesan" rows="3"><?php echo isset($_POST['pesan']) ? $_POST['pesan'] : ''; ?></textarea><br>
+      <textarea class="form-control sm-up" name="pesan" rows="3" required><?php echo isset($_POST['pesan']) ? $_POST['pesan'] : ''; ?></textarea><br>
       <button type="submit" class="btn btn-success">kirim</button>
     </form>
   <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo $response; ?></textarea>
-  <?php
-    if (isset($response)){
-        unset($_POST);
-    }
-  ?>
   <hr>
   <center>
-    <p>
-      &copy; 2019&nbsp;
-      <a href="/">
-        IMKAY
-      </a>&nbsp;
+    <p>&copy; 2019 <a href="/">IMKAY</a>&nbsp;
       <i class="fa fa-facebook-official"></i>
-      <a href="https://m.facebook.com/zvtyrdt.id">
-        zvtyrdt.id
-      </a>
+      <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a>
     </p>
   </center>
   </div>
