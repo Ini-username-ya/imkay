@@ -48,7 +48,7 @@
             </a>
             .
           </p>
-          <textarea class="form-control" readonly="" rows="6">GET /api/anime.php HTTP/1.1
+          <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1
 Host: imkay.herokuapp.com
 Connection: keep-alive
 Save-Data: on
