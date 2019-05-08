@@ -9,15 +9,30 @@
     </title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <style>
+      #wrapshopcart {
+        width               : 350px;
+        margin              : auto;
+        padding             : 20px;
+        padding-bottom      : 1px;
+        margin-bottom       : 20px;
+        background          : #fff;
+        box-shadow          : 0 0 5px #c1c1c1;
+        border-radius       : 5px;
+      }
+    </style>
   </head>
   <body>
     <br>
     <div id="wrapshopcart">
-      <a href="/"><i class="fa fa-times" style="font-size:30px"></i></a>
+      <a href="/">
+        <i class="fa fa-times" style="font-size:30px">
+        </i>
+      </a>
       <center>
         <h4>
-          <br>IMKAY API documentation
+          <br>
+          IMKAY API documentation
         </h4>
       </center>
       <hr>
@@ -62,7 +77,7 @@ Referer: https://imkay.herokuapp.com/
           <i class="fa fa-facebook-official">
           </i>
           <a href="https://m.facebook.com/zvtyrdt.id">
-             zvtyrdt.id
+            zvtyrdt.id
           </a>
         </p>
       </center>
