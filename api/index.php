@@ -26,7 +26,7 @@
     <br>
     <div id="wrapshopcart">
       <a href="/">
-        <i class="fa fa-times" style="font-size:30px">
+        <i class="fa fa-times" style="font-size:25px">
         </i>
       </a>
       <center>
@@ -40,25 +40,15 @@
         <div class="form-group purple-border">
           <label class="form-control">
             randomanime un-official API
-            <i>
-              <span class="badge-dark">
-                new
-              </span>
-            </i>
           </label>
           <p>
-            Simple API to get
-            <a href="anime.php">
-              anime
-            </a>
-            recommendations randomly from
+            Simple API to get anime recommendations randomly from
             <a href="https://www.randomanime.org">
               randomanime.org
             </a>
             .
           </p>
-          <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1
-
+          <textarea class="form-control" readonly="" rows="6">GET /api/anime.php HTTP/1.1
 Host: imkay.herokuapp.com
 Connection: keep-alive
 Save-Data: on
@@ -71,9 +61,9 @@ Referer: https://imkay.herokuapp.com/
       <center>
         <p>
           &copy; 2019&nbsp;
-          <a href="https://m.facebook.com/zvtyrdt.id">
-            IMKAY&nbsp;
-          </a>
+          <a href="/">
+            IMKAY
+          </a>&nbsp;
           <i class="fa fa-facebook-official">
           </i>
           <a href="https://m.facebook.com/zvtyrdt.id">
