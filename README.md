@@ -1,3 +1,3 @@
-My public api
+My public api ©zvtyrdt.id
 
 > https://imkay.herokuapp.com
