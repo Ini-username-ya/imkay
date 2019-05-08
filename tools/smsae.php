@@ -1,5 +1,7 @@
 <?php
 session_start();
+date_default_timezone_set("Asia/Jakarta");
+
 $limit = 10;
 
 if (isset($_SESSION['LAST_CALL'])) {
@@ -14,8 +16,9 @@ if (!isset($_SESSION['limit'])) {
     $_SESSION['limit'] = 0;
 }
 
-$_SESSION['limit'] = $_SESSION["limit"] + 1;
-
+if ($_SESSION["limit"] <= $limit){
+  $_SESSION['limit'] = $_SESSION["limit"] + 1;
+}
 if ($_SESSION["limit"] >= $limit and !isset($_SESSION["LAST_CALL"])){
   $_SESSION['LAST_CALL'] = date("Y-m-d h:i:s");
 }
@@ -99,7 +102,6 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
     }
     $response["sig"] = "@zvtyrdt.id";
 
-
     return json_encode($response);
   }
 }
@@ -139,7 +141,8 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
     $captcha = getCaptcha();
     $response = sendMessage($_POST["nomor"], $_POST["pesan"], $captcha[0], $captcha[1], $captcha[2]);
   }else{
-    $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_call" => $_SESSION["LAST_CALL"]);
+    $wait = 120 - $sec;
+    $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_call" => $_SESSION["LAST_CALL"], "waiting" => $wait." seconds");
     $response = json_encode($dst);
   }
 }
