@@ -48,7 +48,7 @@
           </label>
           <p>
             Simple API to get
-            <a href="api/anime.php">
+            <a href="anime.php">
               anime
             </a>
             recommendations randomly from

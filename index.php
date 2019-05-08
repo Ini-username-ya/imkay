@@ -21,6 +21,10 @@
         <a href="/api">
           API
         </a>
+        <a href="#">
+          TOOLS
+        </a>
+        </a>
       </div>
       <!-- Use any element to open the sidenav -->
       <span onclick="openNav()" style="">
