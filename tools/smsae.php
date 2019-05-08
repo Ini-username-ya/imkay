@@ -1,5 +1,16 @@
 <?php
 
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $_SESSION['postdata'] = $_POST;
+    unset($_POST);
+    header("Location: ".$_SERVER['PHP_SELF']);
+    exit;
+}
+
 $headers = array(
   "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,q=0.8",
   "Accept-Language: id-ID,en-US;q=0.9",
