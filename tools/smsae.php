@@ -2,13 +2,14 @@
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 
-$limit = 10;
+$limit = 15;
+$waiting = 60 * 5; // 5 minutes
 
 if (isset($_SESSION['LAST_CALL'])) {
     $last = strtotime($_SESSION['LAST_CALL']);
     $curr = strtotime(date("Y-m-d h:i:s"));
     $sec =  abs($last - $curr);
-    if ($sec >= 120){
+    if ($sec >= $waiting){
         $_SESSION = array();
     }
 }
@@ -141,7 +142,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
     $captcha = getCaptcha();
     $response = sendMessage($_POST["nomor"], $_POST["pesan"], $captcha[0], $captcha[1], $captcha[2]);
   }else{
-    $wait = 120 - $sec;
+    $wait = $waiting - $sec;
     $dst = array("status" => false, "msg_error" => "Rate Limit Excedeed", "last_call" => $_SESSION["LAST_CALL"], "waiting" => $wait." seconds");
     $response = json_encode($dst);
   }
