@@ -1,16 +1,5 @@
 <?php
 
-if (!isset($_SESSION)) {
-    session_start();
-}
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $_SESSION['postdata'] = $_POST;
-    unset($_POST);
-    header("Location: ".$_SERVER['PHP_SELF']);
-    exit;
-}
-
 $headers = array(
   "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,q=0.8",
   "Accept-Language: id-ID,en-US;q=0.9",
@@ -146,6 +135,11 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
       <button type="submit" class="btn btn-success">kirim</button>
     </form>
   <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo $response; ?></textarea>
+  <?php
+    if (isset($response)){
+        unset($_POST);
+    }
+  ?>
   <hr>
   <center>
     <p>
