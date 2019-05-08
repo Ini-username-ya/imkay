@@ -37,11 +37,11 @@
       </center>
       <hr>
       <div class="from-group">
-        <span class="form-control">
-          <center>
-              masih belum tersedia
-          </center>
-        </span>
+        <a href="/tools/smsae.php">
+          <span class="form-control">
+              free sms sender
+          </span>
+        </a>
       </div>
       <hr>
       <center>
