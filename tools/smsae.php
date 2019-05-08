@@ -138,7 +138,7 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
   <center>
     <p>&copy; 2019 <a href="/">IMKAY</a>&nbsp;
       <i class="fa fa-facebook-official"></i>
-      <a href="https://m.facebook.com/zvtyrdt.id">zvtyrdt.id</a>
+      <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
     </p>
   </center>
   </div>

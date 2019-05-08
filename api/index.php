@@ -1,12 +1,10 @@
-<html>
+p<html>
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Val" name="author">
-    <title>
-      Imkay - public api
-    </title>
+    <title>Imkay - public api</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
@@ -25,28 +23,17 @@
   <body>
     <br>
     <div id="wrapshopcart">
-      <a href="/">
-        <i class="fa fa-times" style="font-size:25px">
-        </i>
-      </a>
+      <a href="/"><i class="fa fa-times" style="font-size:25px"></i></a>
       <center>
-        <h4>
-          <br>
-          IMKAY API documentation
-        </h4>
+       <h4><br>IMKAY API documentation</h4>
       </center>
       <hr>
       <div class="form-group">
         <div class="form-group purple-border">
-          <label class="form-control">
-            randomanime un-official API
-          </label>
+          <label class="form-control">randomanime un-official API</label>
           <p>
             Simple API to get anime recommendations randomly from
-            <a href="https://www.randomanime.org">
-              randomanime.org
-            </a>
-            .
+            <a href="https://www.randomanime.org">randomanime.org</a>.
           </p>
           <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1
 Host: imkay.herokuapp.com
@@ -60,15 +47,9 @@ Referer: https://imkay.herokuapp.com/
       </div>
       <center>
         <p>
-          &copy; 2019&nbsp;
-          <a href="/">
-            IMKAY
-          </a>&nbsp;
-          <i class="fa fa-facebook-official">
-          </i>
-          <a href="https://m.facebook.com/zvtyrdt.id">
-            zvtyrdt.id
-          </a>
+          &copy; 2019 <a href="/">IMKAY</a>&nbsp;
+          <i class="fa fa-facebook-official"></i>
+          <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
         </p>
       </center>
     </div>
