@@ -1,6 +1,6 @@
 body, html {
   /* The image used */
-  background-image: url("/css/background.jpeg");
+  background-image: url("/images/background.jpeg");
 
   /* Full height */
   height: auto 
@@ -68,9 +68,6 @@ textarea {
 .pstyle{
   transition          : margin-left .5s;
   padding             : 20px;
-}
-.bottom{
-  margin-bottom       : 20px;
 }
 
 /* body element css blablabla */

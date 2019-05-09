@@ -34,8 +34,9 @@
         <h4>Selamat datang</h4>
       </center>
 
-      <hr>
+      <!-- content -->
 
+      <hr>
       <center>
         <p><i class="fa fa-facebook-official"></i><a href="https://m.facebook.com/zvtyrdt.id"> Val</a></p>
       </center>
