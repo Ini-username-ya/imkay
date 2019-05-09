@@ -69,16 +69,17 @@ textarea {
   transition          : margin-left .5s;
   padding             : 20px;
 }
-
+.bottom{
+  margin-bottom       : 20px;
+}
 
 /* body element css blablabla */
-
 #wrapshopcart {
   width               : 90%;
   margin              : auto;
+  margin-bottom       : 20px;
   padding             : 20px;
   padding-bottom      : 1px;
-  margin-bottom       : 20px;
   background          : #fff;
   box-shadow          : 0 0 5px #c1c1c1;
   border-radius       : 5px;

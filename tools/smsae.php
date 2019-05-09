@@ -134,9 +134,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
 }
 ?>
 <div id="wrapshopcart">
-  <a href="/tools">
-    <i class="fa fa-times" style="font-size:25px"></i>
-  </a>
+  <a href="/tools"><i class="fa fa-times" style="font-size:25px"></i></a>
   <center>
     <h4>kay - Send Free SMS</h4>
   </center>
