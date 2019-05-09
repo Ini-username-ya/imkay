@@ -31,9 +31,9 @@
       <div class="form-group">
         <span class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">RandomAnime un-official API</h5><br>
+            <h5 class="mb-1">RandomAnime un-official API</h5>
             <small><span class="badge badge-primary badge-pill">new</span></small>
-          </div>
+          </div><br>
           <p class="mb-1">Simple API to get anime recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p><br>
 
         <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1

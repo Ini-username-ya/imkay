@@ -158,11 +158,11 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
   <hr/>
   <div class="form-group">
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
-      <label>nomor telepon</label>
-      <input class="form-control" type="text" name="nomor" value="<?php echo isset($_POST['nomor']) ? $_POST['nomor'] : ''; ?>" placeholder="Contoh: 628xxxx" required><br>
-      <label>pesan</label>
+      <label>Phone Number</label>
+      <input class="form-control" type="text" name="nomor" value="<?php echo isset($_POST['nomor']) ? $_POST['nomor'] : ''; ?>" placeholder="ex: 628xxxx" required><br>
+      <label>Message</label>
       <textarea class="form-control sm-up" name="pesan" rows="3" required><?php echo isset($_POST['pesan']) ? $_POST['pesan'] : ''; ?></textarea><br>
-      <button type="submit" class="btn btn-success">kirim</button>
+      <button type="submit" class="btn btn-success">Send</button>
     </form>
   <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo $response; ?></textarea>
   <hr>
