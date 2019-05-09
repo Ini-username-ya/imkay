@@ -2,7 +2,7 @@
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 
-$limit = 15;
+$limit = 10;
 $waiting = 60 * 5; // 5 minutes
 
 if (isset($_SESSION['LAST_CALL'])) {
@@ -101,7 +101,7 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
       $response["response"]["error"] = true;
       $response["response"]["message"] = "SMS Gratis Gagal Dikirim";
     }
-    $response["sig"] = "@zvtyrdt.id";
+    $response["sig"] = md5(json_encode($response))." @zvtyrdt.id";
 
     return json_encode($response);
   }
@@ -138,7 +138,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
     <i class="fa fa-times" style="font-size:25px"></i>
   </a>
   <center>
-    <br><h4>KAY - Send Free SMS</h4>
+    <h4>kay - Send Free SMS</h4>
   </center>
   <hr/>
   <div class="form-group">
@@ -152,10 +152,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
   <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo $response; ?></textarea>
   <hr>
   <center>
-    <p>&copy; 2019 <a href="/">KAY</a>&nbsp;
-      <i class="fa fa-facebook-official"></i>
-      <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
-    </p>
+    <p><i class="fa fa-facebook-official"></i><a href="https://m.facebook.com/zvtyrdt.id"> Val</a></p>
   </center>
   </div>
 </div>

@@ -75,7 +75,6 @@ function valuenime($url, $code){
        // status
        $result["status"] = true;
 
-
        echo json_encode($result);
 
     }

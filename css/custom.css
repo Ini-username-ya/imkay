@@ -1,8 +1,18 @@
+body, html {
+  /* The image used */
+  background-image: url("/css/background.jpeg");
+
+  /* Full height */
+  height: auto 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #response {
   text-align          : center;
-}
-#EE {
-  width               : 100%;
 }
 
 textarea {
@@ -60,6 +70,9 @@ textarea {
   padding             : 20px;
 }
 
+
+/* body element css blablabla */
+
 #wrapshopcart {
   width               : 90%;
   margin              : auto;
@@ -69,7 +82,6 @@ textarea {
   background          : #fff;
   box-shadow          : 0 0 5px #c1c1c1;
   border-radius       : 5px;
- }
 }
 
       

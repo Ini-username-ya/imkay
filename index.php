@@ -9,18 +9,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
   </head>
-  <body>
-    <br>
+  <body><br>
     <div class="pstyle" id="wrapshopcart">
       <div class="sidenav" id="mySidenav">
         <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
 
-        <!-- item -->
         <a href="/api">API</a>
         <a href="/tools">TOOLS</a>
       </div>
 
-      <!-- Use any element to open the sidenav -->
       <span onclick="openNav()" style="">
         <i class="fa fa-bars"></i>
       </span>
@@ -36,12 +33,11 @@
       <center>
         <h4><br>Selamat datang</h4>
       </center>
+
       <hr>
+
       <center>
-        <p>&copy; 2019 <a href="/">KAY</a>&nbsp;
-          <i class="fa fa-facebook-official"></i>
-          <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
-        </p>
+        <p><i class="fa fa-facebook-official"></i><a href="https://m.facebook.com/zvtyrdt.id"> Val</a></p>
       </center>
     </div>
   </body>
