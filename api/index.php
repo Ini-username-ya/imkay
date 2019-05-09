@@ -25,13 +25,13 @@
     <div id="wrapshopcart">
       <a href="/"><i class="fa fa-times" style="font-size:25px"></i></a>
       <center>
-       <h5><br>IMKAY API documentation</h5>
+       <h4><br>IMKAY API documentation</h4>
       </center>
       <hr>
       <div class="form-group">
         <span class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">RandomAnime un-official API</h4>
+            <h5 class="mb-1">RandomAnime un-official API</h5><br>
             <small><span class="badge badge-primary badge-pill">new</span></small>
           </div>
           <p class="mb-1">Simple API to get anime recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p><br>
