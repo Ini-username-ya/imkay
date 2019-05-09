@@ -24,23 +24,22 @@
     <br>
     <div id="wrapshopcart">
       <a href="/"><i class="fa fa-times" style="font-size:25px"></i></a>
-      <center>
-        <h3><br>list tools</h3>
-      </center>
+      <h3><center>list tools</center></h3>
       <hr>
 
-      <!-- list tools -->
+      <!-- items -->
       <ul class="list-group">
         <a href="/tools/smsae.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <h4 class="mb-1">Send Free SMS</h4>
             <small><span class="badge badge-primary badge-pill">new</span></small>
           </div><br>
-          <p class="mb-1">  Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 15 times you have to wait 300 seconds to send the message again</p>
+          <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 15 times you have to wait 300 seconds to send the message again</p>
         </a>
       </ul>
 
-      <hr> <center>
+      <hr>
+      <center>
         <p>
           &copy; 2019 <a href="/">IMKAY</a>&nbsp;
           <i class="fa fa-facebook-official"></i>
