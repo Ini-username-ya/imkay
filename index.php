@@ -31,7 +31,7 @@
       </script>
 
       <center>
-        <h4><br>Selamat datang</h4>
+        <h4>Selamat datang</h4>
       </center>
 
       <hr>
