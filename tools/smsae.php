@@ -136,18 +136,24 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
 <div id="wrapshopcart">
   <a href="/tools"><i class="fa fa-times" style="font-size:25px"></i></a>
   <center>
-    <h4>kay - Send Free SMS</h4>
+    <h4>Send Free SMS</h4>
   </center>
   <hr/>
-  <div class="form-group">
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
-      <label>Phone Number</label>
-      <input class="form-control" type="text" name="nomor" value="<?php echo isset($_POST['nomor']) ? $_POST['nomor'] : ''; ?>" placeholder="ex: 628xxxx" required><br>
-      <label>Message</label>
-      <textarea class="form-control sm-up" name="pesan" rows="3" required><?php echo isset($_POST['pesan']) ? $_POST['pesan'] : ''; ?></textarea><br>
-      <button type="submit" class="btn btn-success">Send</button>
-    </form>
-  <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo $response; ?></textarea>
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
+    <div class="form-group">
+      <label for="nomor">Phone Number</label>
+      <input class="form-control" type="text" name="nomor" value="<?php echo isset($_POST['nomor']) ? $_POST['nomor'] : ''; ?>" placeholder="ex: 628xxxx" required>
+    </div>
+    <div class="form-group">
+      <label for="pesan">Message</label>
+      <textarea class="form-control sm-up" name="pesan" rows="3" placeholder="..." required><?php echo isset($_POST['pesan']) ? $_POST['pesan'] : ''; ?></textarea>
+    </div>
+    <button type="submit" class="btn btn-success ">Send</button><br>
+  </form>
+
+  <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo isset($response) ? $response : "result here"; ?></textarea>
+  </p>
+
   <hr>
   <center>
     <p><i class="fa fa-facebook-official"></i><a href="https://m.facebook.com/zvtyrdt.id"> Val</a></p>

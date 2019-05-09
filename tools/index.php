@@ -17,8 +17,6 @@
       <hr>
 
       <ul class="list-group">
-
-        <li class="list-group-item active"><i class="fa fa-paper-plane"></i> messaging</li>
         <!-- items -->
         <a href="/tools/smsae.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
