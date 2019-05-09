@@ -110,29 +110,14 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="Val" name="author">
-
-<title>IMKAY - send free SMS</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<style type="text/css">
-    #wrapshopcart{width:350px;margin:auto;padding:20px;
-     padding-bottom: 1px;margin-bottom: 20px;background:#fff;box-shadow:0 0 5px #c1c1c1;border-radius:5px;}
-    #response{
-        text-align: center;
-    }
-    #EE{
-        width: 50%;
-    }
-    textarea { resize:none; }
-    #count{
-        text-align: right;
-    }
-
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Val" name="author">
+  <title>IMKAY - send free SMS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/custom.css" rel="stylesheet">
 </head>
 <body>
 <br>

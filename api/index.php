@@ -7,18 +7,7 @@
     <title>Imkay - public api</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-      #wrapshopcart {
-        width               : 350px;
-        margin              : auto;
-        padding             : 20px;
-        padding-bottom      : 1px;
-        margin-bottom       : 20px;
-        background          : #fff;
-        box-shadow          : 0 0 5px #c1c1c1;
-        border-radius       : 5px;
-      }
-    </style>
+    <link href="/css/custom.css" rel="stylesheet">
   </head>
   <body>
     <br>
