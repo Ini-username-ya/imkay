@@ -25,7 +25,7 @@
     <div id="wrapshopcart">
       <a href="/"><i class="fa fa-times" style="font-size:25px"></i></a>
       <center>
-       <h4><br>IMKAY API documentation</h4>
+       <h5><br>IMKAY API documentation</h5>
       </center>
       <hr>
       <div class="form-group">
