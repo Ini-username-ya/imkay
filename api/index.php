@@ -37,7 +37,7 @@ Referer: https://imkay.herokuapp.com/
       </div>
       <hr>
       <center>
-        <p>&copy; 2019 <a href="/">IMKAY</a>&nbsp;
+        <p>&copy; 2019 <a href="/">KAY</a>&nbsp;
           <i class="fa fa-facebook-official"></i>
           <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
         </p>

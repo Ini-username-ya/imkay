@@ -4,7 +4,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Val" name="author">
-    <title>Selamat datang di IMKAY</title>
+    <title>Selamat datang</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
@@ -38,7 +38,7 @@
       </center>
       <hr>
       <center>
-        <p>&copy; 2019 <a href="/">IMKAY</a>&nbsp;
+        <p>&copy; 2019 <a href="/">KAY</a>&nbsp;
           <i class="fa fa-facebook-official"></i>
           <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
         </p>
