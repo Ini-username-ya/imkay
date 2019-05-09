@@ -115,7 +115,7 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="Val" name="author">
 
-<title>IMKAY - sms gratis</title>
+<title>IMKAY - send free SMS</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <style type="text/css">
@@ -153,7 +153,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
     <i class="fa fa-times" style="font-size:25px"></i>
   </a>
   <center>
-    <br><h4>IMKAY - free sms sender</h4>
+    <br><h4>IMKAY - Send Free SMS</h4>
   </center>
   <hr/>
   <div class="form-group">

@@ -29,25 +29,26 @@
       </center>
       <hr>
       <div class="form-group">
-        <div class="form-group purple-border">
-          <label class="form-control">randomanime un-official API</label>
-          <p>
-            Simple API to get anime recommendations randomly from
-            <a href="https://www.randomanime.org">randomanime.org</a>.
-          </p>
-          <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1
+        <span class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">RandomAnime un-official API</h4>
+            <small><span class="badge badge-primary badge-pill">new</span></small>
+          </div>
+          <p class="mb-1">Simple API to get anime recommendations randomly from <a href="https://www.randomanime.org">randomanime.org</a>.</p><br>
+
+        <textarea class="form-control" readonly="" rows="7">GET /api/anime.php HTTP/1.1
 Host: imkay.herokuapp.com
 Connection: keep-alive
 Save-Data: on
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
 Referer: https://imkay.herokuapp.com/
 </textarea>
-        </div>
-        <hr>
+        </span>
+
       </div>
+      <hr>
       <center>
-        <p>
-          &copy; 2019 <a href="/">IMKAY</a>&nbsp;
+        <p>&copy; 2019 <a href="/">IMKAY</a>&nbsp;
           <i class="fa fa-facebook-official"></i>
           <a href="https://m.facebook.com/zvtyrdt.id">Val</a>
         </p>
