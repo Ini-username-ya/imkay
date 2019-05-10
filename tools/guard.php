@@ -44,7 +44,13 @@ function post($token, $onoff){
         "fb_api_caller_class" => "IsShieldedSetMutation",
         "access_token" => $token
   );
-  return cURL("https://graph.facebook.com/graphql", $params);
+  $response = cURL("https://graph.facebook.com/graphql", $params);
+  $res = json_decode($res);
+  if ($res->error_msg) {
+    return $res->error_msg;
+  } else {
+    return $res;
+  }
 }
 ?>
 

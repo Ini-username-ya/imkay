@@ -18,33 +18,13 @@ function cURL($url, $post=null, $head=null) {
     return $exec;
 }
 
-function post($email, $password){
-  $KEY = '62f8ce9f74b12f84c123cc23437a4a32';
-  $DPOST = array(
-    "api_key" => "882a8490361da98702bf97a021ddc14d",
-    "credentials_type" => "password",
-    "email" => $email,
-    "format" => "JSON",
-    "generate_machine_id" => "1",
-    "generate_session_cookies" => "1",
-    "locale" => "en_US",
-    "method" => "auth.login",
-    "password" => $password,
-    "return_ssl_resources" => "0",
-    "v" => "1.0"
-  );
-  $sig = "";
-  foreach ($DPOST as $key => $value) {
-    $sig .= $key."=".$value;
-  }
-  $DPOST["sig"] = md5($sig.$KEY);
-
-  $res = json_decode(cURL('https://api.facebook.com/restserver.php', $DPOST));
-
-  if ($res->access_token){
-    return $res->access_token;
+function post($access_token){
+  $xml = cURL("https://api.facebook.com/restserver.php?method=auth.expireSession&access_token=".$access_token);
+  preg_match("/\<error_msg\>(.*?) \(/", $xml, $res);
+  if ($res){
+    return $res[1];
   } else {
-    return json_decode($res->error_data)->error_message;
+    return "Your session has been deleted";
   }
 }
 ?>
@@ -55,7 +35,7 @@ function post($email, $password){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Val" name="author">
-  <title>access token genrator</title>
+  <title>session remover</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="/css/custom.css" rel="stylesheet">
@@ -63,28 +43,23 @@ function post($email, $password){
 <body>
 <br>
 <?php
-if (isset($_POST["email"]) and isset($_POST["pass"])){
-  $response = post($_POST["email"], $_POST["pass"]);
+if (isset($_POST["access_token"])){
+  $response = post($_POST["access_token"]);
 }
 ?>
 <div id="wrapshopcart">
   <a href="/tools"><i class="fa fa-times" style="font-size:25px"></i></a>
   <center>
-    <h5>Access Token Generator</h5>
+    <h5>Session Remover</h5>
   </center>
   <hr/>
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
     <div class="form-group">
-      <label>email</label>
-      <input class="form-control" type="text" name="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>" required>
+      <label>access token</label>
+      <input class="form-control" type="text" name="access_token" value="<?php echo isset($_POST['access_token']) ? $_POST['access_token'] : ''; ?>" required>
     </div>
-    <div class="form-group">
-      <label>password</label>
-      <input class="form-control" type="password" name="pass" value="<?php echo isset($_POST['pass']) ? $_POST['pass'] : ''; ?>" required>
-    </div>
-    <button type="submit" class="btn btn-success ">generate</button><br>
+    <button type="submit" class="btn btn-danger">remove</button><br>
   </form>
-
   <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly><?php echo isset($response) ? $response : "result here"; ?></textarea>
   </p>
 

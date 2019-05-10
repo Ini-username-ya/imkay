@@ -114,7 +114,7 @@ function sendMessage($nohp, $message, $chall, $captcha, $sess){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="Val" name="author">
-  <title>KAY - send free SMS</title>
+  <title>SMS masking</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="/css/custom.css" rel="stylesheet">
@@ -136,7 +136,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
 <div id="wrapshopcart">
   <a href="/tools"><i class="fa fa-times" style="font-size:25px"></i></a>
   <center>
-    <h4>Send Free SMS</h4>
+    <h4>SMS Masking</h4>
   </center>
   <hr/>
   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>

@@ -26,11 +26,11 @@
         <!-- messagging -->
         <a href="/tools/smsae.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">Send Free SMS</h4>
+            <h4 class="mb-1">SMS masking</h4>
             <small><span class="badge badge-primary">messaging</span></small>
           </div>
           <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 5 times you have to wait 3 minutes to send the message again</p>
-        </a>
+        </a><br>
 
         <!-- facebook -->
         <a href="/tools/token.php" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -42,12 +42,19 @@
         </a>
         <a href="/tools/guard.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">Profile Guard</h4>
+            <h4 class="mb-1">Profile Picture Guard</h4>
             <small><span class="badge badge-primary">facebook</span></small>
           </div>
           <p class="mb-1"><small>note: we don't store any data that you provide</small></p>
         </a>
-
+        <a href="/tools/tokenkiller.php" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">Session Remover</h4>
+            <small><span class="badge badge-primary">facebook</span></small>
+          </div>
+          <p class="mb-1">use this service if you want to make your access token unusable</p>
+          <p><small>note: we don't store any data that you provide</small></p>
+        </a>
       </ul>
       <script>
         function Search() {
