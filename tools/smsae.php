@@ -3,7 +3,7 @@ session_start();
 date_default_timezone_set("Asia/Jakarta");
 
 $limit = 5;
-$waiting = 60 * 5; // 5 minutes
+$waiting = 60 * 3; // minutes
 
 if (isset($_SESSION['LAST_CALL'])) {
     $last = strtotime($_SESSION['LAST_CALL']);
