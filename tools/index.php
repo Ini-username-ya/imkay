@@ -36,8 +36,7 @@
             <h4 class="mb-1">Profile Guard</h4>
             <small><span class="badge badge-primary badge-pill">facebook</span></small>
           </div>
-          <p class="mb-1">make your profile photo still protected</p>
-          <p><small>note: we don't store any data that you provide</small></p>
+          <p class="mb-1"><small>note: we don't store any data that you provide</small></p>
         </a>
       </ul>
       <script>

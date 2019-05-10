@@ -2,7 +2,7 @@
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 
-$limit = 10;
+$limit = 5;
 $waiting = 60 * 5; // 5 minutes
 
 if (isset($_SESSION['LAST_CALL'])) {
