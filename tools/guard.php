@@ -46,8 +46,8 @@ function post($token, $onoff){
   );
   $response = cURL("https://graph.facebook.com/graphql", $params);
   $res = json_decode($response);
-  if ($res->error_msg) {
-    return $res->error_msg;
+  if ($res->error->message) {
+    return $res->error->message;
   } else {
     return $response;
   }
