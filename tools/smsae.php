@@ -151,7 +151,7 @@ if (isset($_POST["nomor"]) and isset($_POST["pesan"])){
     <button type="submit" class="btn btn-success ">Send</button><br>
   </form>
 
-  <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly> <?php echo isset($response) ? $response : "result here"; ?></textarea>
+  <textarea class="form-control" type="textarea" maxlength="150" rows="3" readonly><?php echo isset($response) ? $response : "result here"; ?></textarea>
   </p>
 
   <hr>

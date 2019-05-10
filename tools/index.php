@@ -8,6 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+    <style> .has-search .form-control {padding-left: 2.375rem;} .has-search .form-control-feedback {position: absolute; z-index: 2; display: block; width: 2.375rem; height: 2.375rem; line-height: 2.375rem; text-align: center; pointer-events: none; color: #aaa;} </style>
   </head>
   <body>
     <br>
@@ -16,7 +17,12 @@
       <h3><center>list tools</center></h3>
       <hr>
 
-      <ul class="list-group">
+      <div class="form-group has-search">
+         <i class="fa fa-search form-control-feedback"></i>
+         <input type="text" onkeyup="Search()" class="form-control" placeholder="Search" id="tanya">
+      </div>
+
+      <ul class="list-group" id="daftar">
         <!-- items -->
         <a href="/tools/smsae.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
@@ -25,8 +31,28 @@
           </div><br>
           <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 10 times you have to wait 300 seconds to send the message again</p>
         </a>
-
       </ul>
+      <script>
+        function Search() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('tanya');
+          filter = input.value;
+          ul = document.getElementById("daftar");
+          li = ul.getElementsByTagName('a');
+
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("h4")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+      </script>
 
       <hr>
       <center>

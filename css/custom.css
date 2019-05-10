@@ -1,33 +1,16 @@
 body, html {
   /* The image used */
-  background-image: url("/images/background.jpeg");
-
-  /* Full height */
-  height: auto 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image     : url("/images/background.jpeg");
+  height               : 0 auto;
+  background-position  : center;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+  background-attachment: fixed;
 }
 
-#response {
-  text-align          : center;
-}
 
 textarea {
   resize              : none;
-}
-
-#count {
-  text-align          : right;
-}
-
-.badge-dark {
-  color               : #fff;
-  background-color    : #343a40;
-  border-radius       : 3px;
-  padding             : 1px
 }
 
 /* The side navigation menu */
