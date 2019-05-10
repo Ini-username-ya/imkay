@@ -29,7 +29,7 @@
             <h4 class="mb-1">Send Free SMS</h4>
             <small><span class="badge badge-primary badge-pill">messaging</span></small>
           </div>
-          <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 10 times you have to wait 300 seconds to send the message again</p>
+          <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 5 times you have to wait 5 minutes to send the message again</p>
         </a>
         <a href="/tools/guard.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
