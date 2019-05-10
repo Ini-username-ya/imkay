@@ -1,14 +1,3 @@
-body, html {
-  /* The image used */
-  background-image     : url("/images/background.jpeg");
-  height               : 0 auto;
-  background-position  : center;
-  background-repeat    : no-repeat;
-  background-size      : cover;
-  background-attachment: fixed;
-}
-
-
 textarea {
   resize              : none;
 }

@@ -27,9 +27,17 @@
         <a href="/tools/smsae.php" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <h4 class="mb-1">Send Free SMS</h4>
-            <small><span class="badge badge-primary badge-pill">new</span></small>
-          </div><br>
+            <small><span class="badge badge-primary badge-pill">messaging</span></small>
+          </div>
           <p class="mb-1">Send SMS to all operators in Indonesia at no charge. this tool is equipped with the completion of automatic captcha. After 10 times you have to wait 300 seconds to send the message again</p>
+        </a>
+        <a href="/tools/guard.php" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">Profile Guard</h4>
+            <small><span class="badge badge-primary badge-pill">facebook</span></small>
+          </div>
+          <p class="mb-1">make your profile photo still protected</p>
+          <p><small>note: we don't store any data that you provide</small></p>
         </a>
       </ul>
       <script>
