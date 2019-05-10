@@ -38,6 +38,13 @@
           </div>
           <p class="mb-1"><small>note: we don't store any data that you provide</small></p>
         </a>
+        <a href="/tools/token.php" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h4 class="mb-1">Access Token Generator</h4>
+            <small><span class="badge badge-primary badge-pill">facebook</span></small>
+          </div>
+          <p class="mb-1"><small>note: we don't store any data that you provide</small></p>
+        </a>
       </ul>
       <script>
         function Search() {
