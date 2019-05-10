@@ -45,11 +45,11 @@ function post($token, $onoff){
         "access_token" => $token
   );
   $response = cURL("https://graph.facebook.com/graphql", $params);
-  $res = json_decode($res);
+  $res = json_decode($response);
   if ($res->error_msg) {
     return $res->error_msg;
   } else {
-    return $res;
+    return $response;
   }
 }
 ?>
